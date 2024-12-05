@@ -75,7 +75,7 @@
                 const bounds = currentRectangle.getBounds();
 
                 // Directly fetch the image from Google Maps
-                const staticMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${bounds.getCenter().lat()},${bounds.getCenter().lng()}&zoom=15&size=640x640&path=fillcolor:transparent|${bounds.getNorthEast().lat()},${bounds.getNorthEast().lng()}|${bounds.getNorthEast().lat()},${bounds.getSouthWest().lng()}|${bounds.getSouthWest().lat()},${bounds.getSouthWest().lng()}|${bounds.getSouthWest().lat()},${bounds.getNorthEast().lng()}&key=AIzaSyCsZSm3Y5iPQ_gj_UIJ_dKY_cbCvfvYciQ`;
+                const staticMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${bounds.getCenter().lat()},${bounds.getCenter().lng()}&zoom=15&size=640x640&path=fillcolor:transparent|${bounds.getNorthEast().lat()},${bounds.getNorthEast().lng()}|${bounds.getNorthEast().lat()},${bounds.getSouthWest().lng()}|${bounds.getSouthWest().lat()},${bounds.getSouthWest().lng()}|${bounds.getSouthWest().lat()},${bounds.getNorthEast().lng()}&key=rewrite the history to erase it:;
 
                 document.getElementById('croppedImage').src = staticMapUrl;
                 document.getElementById('locationInfo').innerHTML = `<p>Center Latitude: ${bounds.getCenter().lat()}</p><p>Center Longitude: ${bounds.getCenter().lng()}</p><p>Zoom Level: 15</p>`;
